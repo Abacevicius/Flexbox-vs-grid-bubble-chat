@@ -1,0 +1,65 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+.section-1{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 40px;
+ transition: 0.3s;
+}
+.section-2{
+ display: flex;
+ justify-content: center;
+ flex-direction: row-reverse;
+ align-items: center;
+ margin-top: 40px;
+  transition: 0.3s;
+}
+p{
+ max-width: 300px;
+ background-color:#dddddd ;
+ border-radius: 20px 20px 20px 0px;
+ padding: 20px;
+}
+
+section:nth-of-type(even) .box{
+ width: 0px;
+  height: 0px;
+  display: flex;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #3bc06f;
+  border-right: 10px solid transparent;
+}
+section:nth-of-type(odd) .box{
+ width: 0px;
+  height: 0px;
+  display: flex;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #dddddd;
+}
+section:hover{
+  transform: scale(1.1);
+}
+
+p:nth-of-type(even){
+ display: flex;
+ flex-direction: row-reverse;
+}
+
+.section-2:nth-of-type(even) p{
+ border-radius: 20px 20px 0px 20px;
+ background-color: #3bc06f;
+}
+.image {
+ display: flex;
+ justify-content: start;
+ height: 50px;
+ width: 50px;
+ background: black;
+}
+
